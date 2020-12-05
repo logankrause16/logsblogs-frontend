@@ -8,3 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'logsblogs-frontend';
 }
+// TODO: Creater the path route thingy

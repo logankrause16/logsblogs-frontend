@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "logsblogs-frontend"
+  "defaultProject": "logsblogs-frontend",
+  "cli": {
+    "analytics": "85f46948-831b-49c0-9b61-de6b31df0668"
+  }
 }
