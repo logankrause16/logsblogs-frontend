@@ -1,21 +1,21 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    Brand
+
+  <a [routerLink]="['/']" routerLinkActive="" >
+    Home Icon
   </a>
 
   <button class="navbar-toggler" type="button">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
   <div class="collapse navbar-collapse">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Item 1</a>
+        <a [routerLink]="['/black-series']" routerLinkActive="router-link-active">Black Series</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Item 2</a>
+        <a [routerLink]="['/game-reviews']" routerLinkActive="router-link-active">Game Reviews</a>
       </li>
     </ul>
   </div>

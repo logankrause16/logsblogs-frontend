@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-align: center;
+    cursor: pointer;
+    border-left: 1px solid white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    min-width: 30%;
+}
