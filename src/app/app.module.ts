@@ -9,6 +9,7 @@ import { GameReviewsComponent } from './game-reviews/game-reviews.component';
 import { BlackSeriesComponent } from './black-series/black-series.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BackendService } from './backend.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { AppRoutingModule } from './app-routing.module';
     NgbModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    BackendService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
