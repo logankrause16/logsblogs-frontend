@@ -1,33 +1,18 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { GameReviewsComponent } from './game-reviews/game-reviews.component';
-import { BlackSeriesComponent } from './black-series/black-series.component';
-import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
-import { BackendService } from './backend.service';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    NavBarComponent,
-    GameReviewsComponent,
-    BlackSeriesComponent,
-    LoginComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule,
     AppRoutingModule
   ],
-  providers: [
-    BackendService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
