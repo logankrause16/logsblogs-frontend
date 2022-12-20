@@ -3,12 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AngularCesiumModule } from 'angular-cesium';
 import { BlackSeriesComponent } from './black-series/black-series.component';
 import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { GameReviewsComponent } from './game-reviews/game-reviews.component';
-import { CesiumComponent } from './cesium/cesium.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +14,11 @@ import { CesiumComponent } from './cesium/cesium.component';
     BlackSeriesComponent,
     HomeComponent,
     NavBarComponent,
-    GameReviewsComponent,
-    CesiumComponent
+    GameReviewsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AngularCesiumModule.forRoot()
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
