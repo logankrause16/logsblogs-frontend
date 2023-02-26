@@ -1,15 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/api.service';
+import { HomePage } from 'src/assets/message';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  providers: [ApiService]
 })
 export class HomeComponent implements OnInit {
+  data: HomePage | undefined; 
 
-  constructor() { }
+  constructor(private apiService: ApiService) {}
 
-  ngOnInit(): void {
+  getHomePageData() {
+    this.apiService.getHomePage().subscribe(
+      data => (this.data = data)
+    )
   }
 
+  ngOnInit(): void {
+    this.getHomePageData()
+  }
 }
