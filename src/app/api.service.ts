@@ -10,7 +10,7 @@ export class ApiService {
   }
 
   getHomePage() {
-    let url = 'http://localhost:8080/v1/api/'
+    let url = 'http://localhost:8000/v1/api/'
     return this.http.get<HomePage>(url);
   }
 }
