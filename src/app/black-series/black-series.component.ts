@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { ApiService } from 'src/app/api.service';
 import { BlackSeries } from 'src/assets/message';
 
