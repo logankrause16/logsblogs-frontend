@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DataGridComponent } from './shared/data-grid/data-grid.component';
 import { ModalComponent } from './shared/modal/modal.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ModalComponent } from './shared/modal/modal.component';
     NavBarComponent,
     GameReviewsComponent,
     DataGridComponent,
-    ModalComponent
+    ModalComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,

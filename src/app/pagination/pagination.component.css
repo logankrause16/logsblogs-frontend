@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+ul.pagination {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.page-item {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+}
+
+li.page-item.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+li.page-item:hover {
+    background-color: #ddd;
+}
